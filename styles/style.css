@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(255, 226, 183);
+    align-items: center;
+    width: 100%;
+    display: grid;
+    z-index: 100;
+    position: fixed;
+    grid-template-columns: 20% 80%;
+}
+.Logo{
+    display: flex;
+    justify-content: space-around;
+}
+.Menu{
+    display: none;
+}
+.Navigator{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.pedido {
+    margin-top: 6em;
+    padding: 4em 4em;
+    background: rgb(255, 198, 112);
+
+
+
+}
+.Navigator span{
+    padding: 0 0.5em;
+    cursor: pointer;
+}
+.Navigator span:hover{
+    cursor: pointer;
+    background:  #cf9b67 ;
+}
+.Navigator p{
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+    font-size: 15px;
+}
+.Logo img{
+    width: 45px;
+    height: 45px;
+}
+.Logo h2{
+    
+    color: #663607 ;
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+}
+.Logo h2 a{
+    color: #663607 ;
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+    text-decoration: none;
+    outline-style: none;
+}
+.Carrusel{
+    padding-top: 3em;
+    justify-content: center;
+}
+
+.Presentation{
+    width: 100%;
+    padding: 4em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Banner1{
+    padding: 2em;
+    -moz-border-radius: 0 20% / 0 80%;
+    -webkit-border-radius: 0 40% / 0 80%;
+    border-radius: 0 10% / 0 100%;
+    background:  #ffd7af ;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    margin-top: 3em;
+    align-items: center;
+    text-align: center;
+}
+
+.Info{
+
+    margin-left: 15%;
+}
+.Banner1 h2{
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Banner1 p{
+    text-align: center;
+    max-width: 90%;
+    font-size: 20px;
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+}
+.Banner1 img{
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+
+ }
+ .title-h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    font-size: 35px;
+    font-family: 'Righteous';
+    font-family: 'Fredoka One' ;
+ }
+ .Establecimientos{
+
+    background:  #f3b679 ;
+     margin-top: 5em;
+     display: flex;
+     padding: 2em 0em;
+     justify-content: space-around;
+ }
+ 
+
+.pagination{
+    margin-bottom: 2em;
+} 
+
+.Fotter{
+    display: flex;
+    justify-content: center;
+    
+}
+.Fotter span{
+   margin: 0.5em;
+    
+}
+.Menu-movil{
+    padding-top: 5em;
+    display : none;
+    background: rgb(255, 226, 183);
+}
+.Menu-movil span a{
+   display: flex;
+   padding: 0.5em 0em;
+   border-bottom: 2px solid #663607 ;
+
+}
+.Menu-movil span a:hover{
+    background: rgb(255, 198, 112);
+ 
+ }
+.Menu-movil span a p{
+    margin-left: 2em;
+ }
+ .Menu-movil span a i{
+    margin-left: 2em;
+ }
+#menu-check{
+   display: none;
+}
+
+#menu-check:checked + .Menu-movil{
+    display: block;
+
+}
+
+
+@media only screen and (max-width: 1160px){
+
+    .Navigator{
+        display: none;
+    }
+    
+    header {
+        background: rgb(255, 226, 183);
+        width: 100%;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        z-index: 100;
+        position: fixed;
+        
+    }
+    .Carrusel{
+        padding-top: 2em;
+        justify-content: center;
+    }
+  .Logo{
+      justify-content: start;
+  }
+    .Logo h2{
+        text-align: center;
+        align-items: center;
+        margin-left: 10%;
+    }
+    
+    .Menu{
+        display: grid;
+        justify-content: end;
+        margin-right: 10%;
+        
+        
+    }
+    .Presentation{
+        width: 100%;
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+
+    }
+    .title-h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        font-size: 25px;
+        font-family: 'Righteous';
+        font-family: 'Fredoka One' ;
+     }
+
+     .Banner1{
+        background:  #ffd7af ;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+.Banner1 img{
+    display: none;
+
+ }
+ .Establecimientos{
+
+     background:  #f3b679 ;
+     display: block;
+     align-items: center;
+     text-align: center;
+     justify-content: center;
+ }
+.Establecimientos div{
+    margin-top:  2em;
+
+}
+
+
+}

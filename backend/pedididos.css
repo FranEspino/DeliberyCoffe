@@ -1,0 +1,26 @@
+
+.pedido{
+background: rgb(231, 154, 39);
+display :flex;
+width: 100%;
+height: 100vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 5em;
+margin-top: 5em;
+padding-top: 13em;
+padding-bottom: 13em;
+}
+.pedido input{
+    
+  width: 60%;
+   margin: 1em;
+   padding: 1em;
+ 
+}
+#boton{
+    text-align: center;
+
+   padding-bottom: 2em;
+}
